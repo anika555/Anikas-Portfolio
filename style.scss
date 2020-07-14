@@ -1,0 +1,442 @@
+@import "variable";
+@import "reset";
+
+.container {
+  // margin: 0 auto;
+  display: grid;
+
+  grid-template-areas:
+    "head"
+    "intro"
+    "home"
+    "icon"
+    "foot";
+
+  grid-template-rows: 50px 50px 3fr 3fr 50px;
+}
+
+#mainhome,
+#mainportf,
+header,
+footer {
+  width: 100%;
+  margin: 0;
+}
+
+// .iconitem {
+//   padding-top: 0.2rem;
+// }
+
+// .info {
+//   margin-top: 0.2rem;
+// }
+
+.webp {
+  width: 50%;
+  padding: 0.2rem;
+}
+
+.linkedin {
+  left: 51%;
+}
+
+.xing {
+  left: 58%;
+}
+
+.info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  flex-direction: column;
+  align-items: center;
+}
+
+#mainhome {
+  height: 100vh;
+  background-color: $secondary-color;
+  // margin: $primary-margin;
+  // width: 70%;
+}
+
+header {
+  position: fixed;
+  height: 50px;
+  grid-area: head;
+  background: rgba(24, 145, 139, 0.363);
+  // width: $page-width;
+  // margin: $primary-margin;
+}
+
+a {
+  text-decoration: none;
+  color: $tertiary-color;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navitem {
+  width: fit-content;
+  color: rgb(63, 56, 56);
+  padding: 1.4rem 2rem 0 2rem;
+}
+
+.name {
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  flex-grow: 5;
+  text-align: right;
+  color: rgb(82, 77, 77);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
+  padding: 1.5rem 1.3rem 0 1.3rem;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.intro > p {
+  font-family: serif;
+  font-size: 2rem;
+  margin: 25px 0 0 60px;
+}
+
+.info {
+  grid-area: home;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+}
+
+.intropic {
+  width: 80%;
+  padding: 2rem;
+}
+
+.maintext {
+  width: 85%;
+  // line-height: 1.5rem;
+  // font-size: 1.2rem;
+  // margin: 0 0.8rem 0 0.8rem;
+}
+
+.icon {
+  grid-area: icon;
+  display: flex;
+  align-items: center;
+}
+
+.iconitem {
+  width: 50%;
+  margin: 0.8rem;
+  font-size: 4rem;
+  text-align: center;
+  color: rgba(24, 145, 139, 0.363);
+}
+
+.iconitem > p {
+  font-size: 1rem;
+  // line-height: 1.4rem;
+  color: black;
+}
+
+footer {
+  grid-area: foot;
+  position: fixed;
+  bottom: 0;
+  .copy {
+    // position: fixed;
+    bottom: 0;
+    width: fit-content;
+  }
+}
+
+// ****************Portfolio**********************
+
+header {
+  grid-area: head2;
+}
+
+#mainportf {
+  display: grid;
+
+  grid-template-areas:
+    "head2"
+    "intro2"
+    "portfolio"
+    "foot2";
+
+  grid-template-rows: 50px 50px 1fr 50px;
+
+  height: 100vh;
+  // margin: $primary-margin;
+  // width: $page-width;
+  background-color: $secondary-color;
+}
+
+.intro-portf {
+  grid-area: intro2;
+
+  .pportf {
+    font-size: 1.5rem;
+  }
+}
+
+.container-portf {
+  grid-area: portfolio;
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  align-items: center;
+  text-align: center;
+}
+
+.webp {
+  width: 45%;
+  padding: 0.3rem;
+}
+
+.linkedin,
+.xing {
+  width: 2.6rem;
+
+  position: absolute;
+  bottom: 0.4rem;
+}
+
+.linkedin {
+  left: 50%;
+}
+
+.xing {
+  left: 56%;
+}
+
+.fa-envelope {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 44%;
+}
+
+footer {
+  grid-area: foot2;
+  // width: $page-width;
+}
+
+@media only screen and (min-width: 576px) {
+  .info {
+    flex-direction: row;
+  }
+
+  .icon {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .intropic {
+    width: 50%;
+  }
+
+  .maintext {
+    width: 40%;
+  }
+
+  .linkedin {
+    left: 51%;
+  }
+
+  .xing {
+    left: 58%;
+  }
+
+  .iconitem {
+    margin-bottom: 9rem;
+    width: 25%;
+  }
+
+  .info {
+    margin-top: 6rem;
+  }
+
+  .container-portf {
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .webp {
+    width: 70%;
+  }
+
+  .three,
+  .four {
+    margin-bottom: 5rem;
+  }
+
+  .one,
+  .two {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .info {
+    flex-direction: row;
+  }
+
+  .icon {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .intropic {
+    width: 50%;
+  }
+
+  .maintext {
+    width: 40%;
+  }
+
+  .linkedin {
+    left: 51%;
+  }
+
+  .xing {
+    left: 58%;
+  }
+
+  .iconitem {
+    margin-bottom: 14rem;
+    width: 25%;
+  }
+
+  .info {
+    margin-top: 6rem;
+  }
+
+  .container-portf {
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .webp {
+    width: 70%;
+  }
+
+  .three,
+  .four {
+    margin-bottom: 5rem;
+  }
+
+  .one,
+  .two {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #mainhome,
+  #mainportf,
+  header,
+  footer {
+    width: $page-width;
+    margin: $primary-margin;
+  }
+
+  .iconitem {
+    width: 20%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #mainhome,
+  #mainportf,
+  header,
+  footer {
+    width: $page-width-big;
+    margin: $primary-margin;
+  }
+
+  .container {
+    // margin: 0 auto;
+    display: grid;
+
+    grid-template-areas:
+      "head"
+      "intro"
+      "home"
+      "icon"
+      "foot";
+
+    grid-template-rows: 50px 50px 2fr 1fr 50px;
+  }
+
+  .intropic {
+    padding-top: 1rem;
+  }
+
+  .info {
+    margin-top: 4rem;
+  }
+
+  .iconitem {
+    width: 20%;
+    margin-bottom: 2rem;
+  }
+
+  .webp {
+    width: 60%;
+  }
+
+  .maintext {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+
+  .iconitem > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .navitem {
+    font-size: 1.4rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+  }
+
+  .intro > p {
+    font-size: 3rem;
+  }
+
+  p .pportf {
+    font-size: 8rem;
+  }
+
+  .one,
+  .three {
+    margin-left: 10rem;
+  }
+
+  .two,
+  .four {
+    margin-right: 10rem;
+  }
+}
