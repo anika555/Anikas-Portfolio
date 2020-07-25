@@ -93,6 +93,7 @@ nav {
   width: fit-content;
   color: #3f3838;
   padding: 1.4rem 2rem 0 2rem;
+  font-size: 1.2rem;
 }
 
 .name {
@@ -102,7 +103,8 @@ nav {
   text-align: right;
   color: #524d4d;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 530;
   padding: 1.5rem 1.3rem 0 1.3rem;
 }
 
@@ -141,6 +143,8 @@ nav {
 
 .maintext {
   width: 85%;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .icon {
@@ -206,7 +210,9 @@ header {
 }
 
 .intro-portf .pportf {
+  margin-left: 0.5rem;
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 .container-portf {
@@ -256,6 +262,13 @@ footer {
 }
 
 @media only screen and (min-width: 576px) {
+  .navitem {
+    font-size: 1.2rem;
+  }
+  .name {
+    font-size: 1.5rem;
+    font-weight: 530;
+  }
   .info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -297,6 +310,11 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .pportf {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
   }
   .webp {
     width: 70%;
@@ -345,6 +363,30 @@ footer {
   }
   .info {
     margin-top: 6rem;
+  }
+  .maintext {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+  .iconitem > p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .navitem {
+    font-size: 1.4rem;
+  }
+  .name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+  }
+  .intro > p {
+    font-size: 3rem;
+  }
+  .intro-portf > .pportf {
+    font-size: 2.5rem;
+    margin-top: 2rem;
   }
   .container-portf {
     -ms-grid-columns: (1fr)[2];
@@ -411,7 +453,7 @@ footer {
   }
   .maintext {
     font-size: 1.7rem;
-    line-height: 2.1rem;
+    line-height: 2.3rem;
   }
   .iconitem > p {
     font-size: 1.5rem;
@@ -429,8 +471,9 @@ footer {
   .intro > p {
     font-size: 3rem;
   }
-  p .pportf {
-    font-size: 8rem;
+  .intro-portf > .pportf {
+    font-size: 2.5rem;
+    margin-top: 2rem;
   }
   .one,
   .three {

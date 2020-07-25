@@ -2,7 +2,6 @@
 @import "reset";
 
 .container {
-  // margin: 0 auto;
   display: grid;
 
   grid-template-areas:
@@ -22,14 +21,6 @@ footer {
   width: 100%;
   margin: 0;
 }
-
-// .iconitem {
-//   padding-top: 0.2rem;
-// }
-
-// .info {
-//   margin-top: 0.2rem;
-// }
 
 .webp {
   width: 50%;
@@ -57,8 +48,6 @@ footer {
 #mainhome {
   height: 100vh;
   background-color: $secondary-color;
-  // margin: $primary-margin;
-  // width: 70%;
 }
 
 header {
@@ -66,8 +55,6 @@ header {
   height: 50px;
   grid-area: head;
   background: rgba(24, 145, 139, 0.363);
-  // width: $page-width;
-  // margin: $primary-margin;
 }
 
 a {
@@ -84,17 +71,16 @@ nav {
   width: fit-content;
   color: rgb(63, 56, 56);
   padding: 1.4rem 2rem 0 2rem;
+  font-size: 1.2rem;
 }
 
 .name {
-  // position: absolute;
-  // bottom: 0;
-  // right: 0;
   flex-grow: 5;
   text-align: right;
   color: rgb(82, 77, 77);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 530;
   padding: 1.5rem 1.3rem 0 1.3rem;
 }
 
@@ -123,9 +109,8 @@ nav {
 
 .maintext {
   width: 85%;
-  // line-height: 1.5rem;
-  // font-size: 1.2rem;
-  // margin: 0 0.8rem 0 0.8rem;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .icon {
@@ -144,7 +129,6 @@ nav {
 
 .iconitem > p {
   font-size: 1rem;
-  // line-height: 1.4rem;
   color: black;
 }
 
@@ -153,7 +137,6 @@ footer {
   position: fixed;
   bottom: 0;
   .copy {
-    // position: fixed;
     bottom: 0;
     width: fit-content;
   }
@@ -177,8 +160,6 @@ header {
   grid-template-rows: 50px 50px 1fr 50px;
 
   height: 100vh;
-  // margin: $primary-margin;
-  // width: $page-width;
   background-color: $secondary-color;
 }
 
@@ -186,7 +167,9 @@ header {
   grid-area: intro2;
 
   .pportf {
+    margin-left: 0.5rem;
     font-size: 1.5rem;
+    margin-top: 2rem;
   }
 }
 
@@ -229,10 +212,18 @@ header {
 
 footer {
   grid-area: foot2;
-  // width: $page-width;
 }
 
 @media only screen and (min-width: 576px) {
+  .navitem {
+    font-size: 1.2rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    font-weight: 530;
+  }
+
   .info {
     flex-direction: row;
   }
@@ -272,6 +263,12 @@ footer {
 
     align-items: center;
     text-align: center;
+  }
+
+  .pportf {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
   }
 
   .webp {
@@ -324,6 +321,36 @@ footer {
     margin-top: 6rem;
   }
 
+  .maintext {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+
+  .iconitem > p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .navitem {
+    font-size: 1.4rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+  }
+
+  .intro > p {
+    font-size: 3rem;
+  }
+
+  .intro-portf > .pportf {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
   .container-portf {
     grid-template-columns: repeat(2, 1fr);
 
@@ -371,7 +398,6 @@ footer {
   }
 
   .container {
-    // margin: 0 auto;
     display: grid;
 
     grid-template-areas:
@@ -403,7 +429,7 @@ footer {
 
   .maintext {
     font-size: 1.7rem;
-    line-height: 2.1rem;
+    line-height: 2.3rem;
   }
 
   .iconitem > p {
@@ -426,8 +452,9 @@ footer {
     font-size: 3rem;
   }
 
-  p .pportf {
-    font-size: 8rem;
+  .intro-portf > .pportf {
+    font-size: 2.5rem;
+    margin-top: 2rem;
   }
 
   .one,
